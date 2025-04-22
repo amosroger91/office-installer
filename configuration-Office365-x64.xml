@@ -1,0 +1,34 @@
+<Configuration>
+
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+    <!-- Include the main apps you want to install -->
+    <Product ID="ExcelRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="WordRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="OutlookRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="PowerPointRetail">
+      <Language ID="en-us" />
+    </Product>
+    <Product ID="AccessRetail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>
+
+  <!-- Enable automatic updates -->
+  <Updates Enabled="TRUE" Channel="Current" />
+
+  <!-- Display Level None to suppress UI during installation -->
+  <Display Level="None" AcceptEULA="TRUE" />
+
+  <!-- Automatically activate Office after installation -->
+  <Property Name="AUTOACTIVATE" Value="1" />
+
+</Configuration>
